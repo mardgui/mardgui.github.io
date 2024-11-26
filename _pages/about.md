@@ -7,15 +7,16 @@ subtitle: PhD student at <a href='https://univ-cotedazur.fr/'>Université Côte 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false  # crops the image to make it circular
-  address: >
+  image_circular: false # crops the image to make it circular
+  more_info: >
     <p>I3S - Bureau 208</p>
     <p>Les Algorithmes - bât. Euclide B</p>
     <p>2000, route des lucioles</p>
     <p>06900 Sophia Antipolis - France</p>
 
-selected_papers: true  # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+news: false # includes a list of news items
+selected_papers: true # includes a list of papers marked as "selected={true}"
+social: true # includes social icons at the bottom of the page
 ---
 
 I am currently a PhD student working under the supervision of Prof. [Lucile Sassatelli](https://www.i3s.unice.fr/~sassatelli/) at the I3S lab, part of Université Côte d'Azur and CNRS, in Sophia Antipolis, France. 

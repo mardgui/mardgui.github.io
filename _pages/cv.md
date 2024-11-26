@@ -6,4 +6,6 @@ description: More information on <a href='https://www.linkedin.com/in/quentingui
 nav: true
 nav_order: 2
 cv_pdf: cv.pdf
+toc:
+  sidebar: left
 ---

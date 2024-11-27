@@ -1,70 +1,276 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Quentin Guimard",
+    "currentPosition": "Postdoctoral research fellow @ UniTrento",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "quentin.guimard@unitn.it",
+    "phone": "",
+    "url": "https://mardgui.github.io",
+    "summary": "",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Via Sommarive, 9",
+      "postalCode": "38123",
+      "city": "Povo",
+      "countryCode": "IT",
+      "region": "Trento"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "Google Scholar",
+        "username": "Quentin Guimard",
+        "url": "https://scholar.google.com/citations?user=nxGwojoAAAAJ"
+      },
+      {
+        "network": "ORCID",
+        "username": "0000-0002-1744-5079",
+        "url": "https://orcid.org/0000-0002-1744-5079"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "quentinguimard",
+        "url": "https://www.linkedin.com/in/quentinguimard/"
       }
     ]
   },
-  "work": [
+  "professionalExperience": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "University of Trento - Department of Information Engineering and Computer Science (DISI)",
+      "position": "Postdoctoral research fellow",
+      "url": "https://mhug.disi.unitn.it",
+      "location": "Trento, Italy",
+      "startDate": "2024-03-12",
+      "endDate": "",
+      "summary": "Working on bias in deep visual recognition models in the Multimedia and Human Understanding Group (MHUG).",
+      "keywords": ["Computer vision", "Bias"]
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Université Côte d'Azur - i3S laboratory",
+      "position": "PhD student",
+      "url": "https://www.i3s.unice.fr",
+      "location": "Sophia Antipolis, France",
+      "startDate": "2020-10-01",
+      "endDate": "2023-11-31",
+      "summary": "Worked under the supervision of Prof. Lucile Sassatelli, on \"Deep learning for adaptive 360° video streaming in virtual reality\", in the Laboratory of Computer Science, Signals and Systems of Sophia Antipolis (i3S).",
+      "collaborations": [
+        "2021: 1-month research stay at the University of Florence, Italy",
+        "2023: 3-month research stay at Centrum Wiskunde & Informatica (CWI), the Netherlands"
+      ],
+      "keywords": ["Deep learning", "Virtual reality", "Streaming", "Multimedia"]
+    },
+    {
+      "name": "Thales Services",
+      "position": "Junior Data Scientist",
+      "location": "Sophia Antipolis, France",
+      "startDate": "2019-09-16",
+      "endDate": "2020-09-12",
+      "summary": "One-year apprenticeship within the Data team (work-study contract), where I worked on several projects, mostly involving unsupervised machine learning techniques and time series forecasting.",
+      "keywords": ["Clustering", "Time series forecasting"]
+    },
+    {
+      "name": "Université du Québec à Montréal (UQAM)",
+      "position": "Research assistant",
+      "url": "https://uqam.ca/",
+      "location": "Montreal, Canada",
+      "startDate": "2019-07-01",
+      "endDate": "2019-08-31",
+      "summary": "Two-month internship under the supervision of Prof. Naouel Moha, where I worked on the identification of security-related bug reports.",
+      "keywords": ["Dataset collection", "Natural language processing", "Classification"]
+    },
+    {
+      "name": "Deret Logistique",
+      "position": "Research engineer",
+      "url": "https://www.deret.fr/",
+      "location": "Saran, France",
+      "startDate": "2018-07-01",
+      "endDate": "2018-08-31",
+      "summary": "Two-month internship within the engineering department of a logistics company, where I worked on improving of the warehouse system and missing items procedures.",
+      "keywords": ["Logistics", "Warehouse management"]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "institution": "Université Côte d'Azur",
+      "location": "Nice, France",
+      "url": "https://univ-cotedazur.fr/",
+      "area": "Computer Science",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "startDate": "2020-10-01",
+      "endDate": "2023-12-18",
+      "thesisTitle": "Deep learning for adaptive 360° video streaming in virtual reality"
+    },
+    {
+      "institution": "Université Côte d'Azur",
+      "location": "Nice, France",
+      "url": "https://univ-cotedazur.fr/",
+      "area": "Computer Science",
+      "studyType": "Master's Degree",
+      "startDate": "2019-09",
+      "endDate": "2020-09",
+      "finalGrade": "Mention très bien"
+    },
+    {
+      "institution": "École Polytechnique Universitaire de l'Université Côte d'Azur",
+      "location": "Sophia Antipolis, France",
+      "url": "https://polytech.univ-cotedazur.fr/",
+      "area": "Computer Science",
+      "studyType": "Diplôme d'ingénieur",
+      "startDate": "2017-09",
+      "endDate": "2020-09"
+    },
+    {
+      "institution": "Université Catholique de Louvain",
+      "location": "Louvain-la-Neuve, Belgium",
+      "url": "https://uclouvain.be/",
+      "area": "Computer Science",
+      "studyType": "Erasmus exchange semester",
+      "startDate": "2018-09",
+      "endDate": "2019-01"
+    },
+    {
+      "institution": "École Polytechnique Universitaire de l'Université d'Orléans",
+      "location": "Orléans, France",
+      "url": "https://www.univ-orleans.fr/polytech/",
+      "area": "General STEM studies",
+      "studyType": "Intensive preparatory course (PeiP)",
+      "startDate": "2015-09",
+      "endDate": "2017-06"
     }
   ],
-  "awards": [
+  "teaching": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "institution": "École Polytechnique Universitaire de l'Université Côte d'Azur",
+      "location": "Sophia Antipolis, France",
+      "url": "https://polytech.univ-cotedazur.fr/",
+      "courseName": "Machine Learning",
+      "role": "Teaching assistant",
+      "hoursPerYear": "16",
+      "courseType": "Labs",
+      "courseLevel": "Master's",
+      "startDate": "2022",
+      "endDate": "2023"
+    },
+    {
+      "institution": "École Polytechnique Universitaire de l'Université Côte d'Azur",
+      "location": "Sophia Antipolis, France",
+      "url": "https://polytech.univ-cotedazur.fr/",
+      "courseName": "Algorithms and Data Structures",
+      "role": "Teaching assistant",
+      "hoursPerYear": "24",
+      "courseType": "Labs",
+      "courseLevel": "Bachelor's",
+      "startDate": "2020",
+      "endDate": "2023"
+    },
+    {
+      "institution": "École Polytechnique Universitaire de l'Université Côte d'Azur",
+      "location": "Sophia Antipolis, France",
+      "url": "https://polytech.univ-cotedazur.fr/",
+      "courseName": "Introduction to Imperative Programming",
+      "role": "Teaching assistant",
+      "hoursPerYear": "24",
+      "courseType": "Labs",
+      "courseLevel": "Bachelor's",
+      "startDate": "2020",
+      "endDate": "2023"
+    },
+    {
+      "institution": "École Polytechnique Universitaire de l'Université Côte d'Azur",
+      "location": "Sophia Antipolis, France",
+      "url": "https://polytech.univ-cotedazur.fr/",
+      "courseName": "From Shallow to Deep Learning",
+      "role": "Teaching assistant",
+      "hoursPerYear": "16",
+      "courseType": "Labs",
+      "courseLevel": "Master's",
+      "startDate": "2020",
+      "endDate": "2022"
+    },
+    {
+      "institution": "Université Côte d'Azur",
+      "location": "Nice, France",
+      "url": "https://univ-cotedazur.fr/",
+      "courseName": "Deep Reinforcement Learning",
+      "role": "Teaching assistant",
+      "courseType": "Summer school interactive tutorial",
+      "date": "2021"
+    },
+    {
+      "institution": "Université Côte d'Azur",
+      "location": "Nice, France",
+      "url": "https://univ-cotedazur.fr/",
+      "courseName": "Visual Recognition and Domain Adaptation",
+      "role": "Teaching assistant",
+      "courseType": "Summer school interactive tutorial",
+      "date": "2021"
+    }
+  ],
+  "supervision": [
+    {
+      "level": "Master",
+      "date": "2022",
+      "studentName": "Franz Franco Gallo",
+      "institution": "Université Côte d'Azur",
+      "thesisTitle": "Deep learning for multiple prediction of head motion"
+    },
+    {
+      "level": "Master",
+      "date": "2021",
+      "studentName": "Hugo Bell",
+      "institution": "University of Edinburgh",
+      "thesisTitle": "Deep learning for human head motion prediction with confidence"
+    }
+  ],
+  "honorsAndAwards": [
+    {
+      "title": "CWI internship grant",
+      "date": "2022-09-30",
+      "awarder": "Centrum Wiskunde & Informatica (CWI)",
+      "url": "https://www.cwi.nl/en/jobs/internships/",
+      "summary": "Recipient of a competitive grant for a three-month PhD internship at Centrum Wiskunde & Informatica (CWI, the national research institute for mathematics and computer science in the Netherlands). Internship topic: \"Learning to predict the emotional state of the user in order to improve the prediction of 360°head movements\"."
+    },
+    {
+      "title": "Best Paper Award",
+      "date": "2022-06-16",
+      "awarder": "ACM MMSys 2022",
+      "url": "https://mmsys2022.ie/program/awards",
+      "summary": "Best Paper Award at the ACM MMSys 2022 conference for the paper \"Deep Variational Learning for Multiple Trajectory Prediction of 360° Head Movements\". Co-authored with Lucile Sassatelli, Francesco Marchetti, Federico Becattini, Lorenzo Seidenari, and Alberto Del Bimbo."
+    }
+  ],
+  "servicesAndVolunteering": [
+    {
+      "serviceType": "Reviewer",
+      "journals": ["ACM Transactions on Multimedia Computing, Communications, and Applications (ACM TOMM)"],
+      "conferences": ["ACM International Conference on Multimedia (ACM MM)", "ACM Multimedia Systems Conference (ACM MMSys)"]
+    },
+    {
+      "serviceType": "Volunteer",
+      "association": "Doctoral Association of the SophiaTech campus (ADSTIC)",
+      "url": "https://webusers.i3s.unice.fr/adstic/",
+      "startDate": "2023-01",
+      "endDate": "2024-03"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Zur Elektrody/namik bewegter Körper",
+      "publisher": "Annalen der Physik",
+      "releaseDate": "1905-06-30",
+      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
+      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+    },
+    {
+      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
+      "publisher": "Annalen der Physik",
+      "releaseDate": "1905-03-18",
+      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
+      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+    },
+    {
+      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
+      "publisher": "Annalen der Physik",
+      "releaseDate": "1916-03-20",
+      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
+      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
     }
   ],
   "certificates": [
@@ -109,29 +315,6 @@
       "issuer": "Stanford University",
       "url": "https://example.com",
       "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
     }
   ],
   "skills": [

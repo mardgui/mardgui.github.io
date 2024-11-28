@@ -1,11 +1,26 @@
 ---
 ---
+
 @article{DVMS_journal,
-    author = "Quentin Guimard and Lucile Sassatelli and Francesco Marchetti and Federico Becattini and Lorenzo Seidenari and Alberto {Del Bimbo}",
-    title = "{Deep} {Variational} {Learning} for 360° {Adaptive} {Streaming}",
-    journal = "Accepted with minor revisions in {ACM} {Transactions} on {Multimedia} {Computing}, {Communications}, and {Applications} (TOMM)",
-    year = "2023",
-    abbr = "TOMM"
+author = {Guimard, Quentin and Sassatelli, Lucile and Marchetti, Francesco and Becattini, Federico and Seidenari, Lorenzo and Bimbo, Alberto Del},
+title = {Deep Variational Learning for 360° Adaptive Streaming},
+year = {2024},
+issue_date = {September 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {20},
+number = {9},
+issn = {1551-6857},
+url = {https://doi.org/10.1145/3643031},
+doi = {10.1145/3643031},
+abstract = {Prediction of head movements in immersive media is key to designing efficient streaming systems able to focus the bandwidth budget on visible areas of the content. However, most of the numerous proposals made to predict user head motion in 360° images and videos do not explicitly consider a prominent characteristic of the head motion data: its intrinsic uncertainty. In this article, we present an approach to generate multiple plausible futures of head motion in 360° videos, given a common past trajectory. To our knowledge, this is the first work that considers the problem of multiple head motion prediction for 360° video streaming. We introduce our discrete variational multiple sequence (DVMS) learning framework, which builds on deep latent variable models. We design a training procedure to obtain a flexible, lightweight stochastic prediction model compatible with sequence-to-sequence neural architectures. Experimental results on four different datasets show that DVMS outperforms competitors adapted from the self-driving domain by up to 41\% on prediction horizons up to 5 s, at lower computational and memory costs. To understand how the learned features account for the motion uncertainty, we analyze the structure of the learned latent space and connect it with the physical properties of the trajectories. We also introduce a method to estimate the likelihood of each generated trajectory, enabling the integration of DVMS in a streaming system. We hence deploy an extensive evaluation of the interest of our DVMS proposal for a streaming system. To do so, we first introduce a new Python-based 360° streaming simulator that we make available to the community. On real-world user, video, and networking data, we show that predicting multiple trajectories yields higher fairness between the traces, the gains for 20–30\% of the users reaching up to 10\% in visual quality for the best number K of trajectories to generate.},
+journal = {ACM Trans. Multimedia Comput. Commun. Appl.},
+month = aug,
+articleno = {263},
+numpages = {25},
+keywords = {360° videos, head motion, trajectory prediction, deep learning},
+abbr = {TOMM},
+selected = {true}
 }
 
 @inproceedings{10.1145/3587819.3592547,

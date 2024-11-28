@@ -65,11 +65,11 @@
   type: time_table
   contents:
     - title: Machine Learning
-        institution: Université Côte d'Azur, Polytech Nice Sophia, France
-        year: 2022 - 2023
-        description:
-          - Master level. Lab sessions.
-          - "Keywords: Scikit-learn, dimensionality reduction, clustering, decision trees, linear / logistic regression, MLP, CNN, SVM, ensemble learning."
+      institution: Université Côte d'Azur, Polytech Nice Sophia, France
+      year: 2022 - 2023
+      description:
+        - Master level. Lab sessions.
+        - "Keywords: Scikit-learn, dimensionality reduction, clustering, decision trees, linear / logistic regression, MLP, CNN, SVM, ensemble learning."
     - title: Introduction to Imperative Programming (Python)
       institution: Université Côte d'Azur, Polytech Nice Sophia, France
       year: 2020 - 2023

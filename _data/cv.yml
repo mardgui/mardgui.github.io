@@ -1,14 +1,22 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
+    - name: Full name
       value: Quentin Guimard
+    - name: Current position
+      value: Postdoctoral research fellow @ UniTrento
+    - name: E-mail address
+      value: quentin.guimard@unitn.it
     - name: Languages
       value: French, English
 
 - title: Experience
   type: time_table
   contents:
+    - title: Postdoctoral Research Fellow
+      institution: Department of Information Engineering and Computer Science (DISI), University of Trento, Italy
+      year: 2024 - present
+
     - title: PhD student
       institution: Laboratoire d'Informatique, Signaux et Systèmes de Sophia Antipolis (I3S), Sophia Antipolis, France
       year: 2020 - 2023
@@ -57,6 +65,12 @@
 - title: Teaching Experience
   type: time_table
   contents:
+    - title: Machine Learning
+        institution: Université Côte d'Azur, Polytech Nice Sophia, France
+        year: 2022 - 2023
+        description:
+          - Master level. Lab sessions.
+          - "Keywords: Scikit-learn, dimensionality reduction, clustering, decision trees, linear / logistic regression, MLP, CNN, SVM, ensemble learning."
     - title: Introduction to Imperative Programming (Python)
       institution: Université Côte d'Azur, Polytech Nice Sophia, France
       year: 2020 - 2023
@@ -69,12 +83,6 @@
       description:
         - Bachelor level. Lab sessions.
         - "Keywords: Java, object-oriented programming, recursive functions, stacks, queues, linked lists, binary trees."
-    - title: Machine Learning
-      institution: Université Côte d'Azur, Polytech Nice Sophia, France
-      year: 2022 - 2023
-      description:
-        - Master level. Lab sessions.
-        - "Keywords: Scikit-learn, dimensionality reduction, clustering, decision trees, linear / logistic regression, MLP, CNN, SVM, ensemble learning."
     - title: From Shallow to Deep Learning
       institution: Université Côte d'Azur, Polytech Nice Sophia, France
       year: 2020 - 2022
@@ -94,7 +102,21 @@
         - Summer school interactive tutorial.
         - "Keywords: object detection, instance segmentation, transfer learning, domain adaptation."
 
-- title: Other Interests
-  type: list
+- title: Services and volunteering
+  type: nested_list
   contents:
-    - Doctoral Association of the SophiaTech campus (<a href='https://adstic.i3s.univ-cotedazur.fr/'>ADSTIC</a>) 2023 team member
+    - title: Reviewer
+      items:
+        - "Journals: ACM Transactions on Multimedia Computing, Communications, and Applications (ACM TOMM)"
+        - "Conferences: ACM International Conference on Multimedia (ACM MM), ACM Multimedia Systems Conference (ACM MMSys)"
+    - title: Volunteer
+      items:
+        - Doctoral Association of the SophiaTech campus (<a href='https://adstic.i3s.univ-cotedazur.fr/'>ADSTIC</a>) 2023-2024 team member
+
+- title: Supervision
+  type: nested_list
+  contents:
+    - title: Master students
+      items:
+        - "Franz Franco Gallo, Université Côte d'Azur, 2022. \"Deep learning for multiple prediction of head motion\", co-supervised with Prof. Lucile Sassatelli."
+        - "Hugo Bell, University of Edinburgh, 2021. \"Deep learning for human head motion prediction with confidence\", co-supervised with Prof. Lucile Sassatelli."

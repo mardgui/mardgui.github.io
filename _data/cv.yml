@@ -4,9 +4,9 @@
     - name: Full name
       value: Quentin Guimard
     - name: Current position
-      value: Postdoctoral research fellow @ UniTrento
+      value: "Postdoctoral research fellow @ UniTrento"
     - name: E-mail address
-      value: quentin.guimard@unitn.it
+      value: "quentin.guimard@unitn.it"
     - name: Languages
       value: French, English
 
@@ -118,5 +118,5 @@
   contents:
     - title: Master students
       items:
-        - "Franz Franco Gallo, Université Côte d'Azur, 2022. \"Deep learning for multiple prediction of head motion\", co-supervised with Prof. Lucile Sassatelli."
-        - "Hugo Bell, University of Edinburgh, 2021. \"Deep learning for human head motion prediction with confidence\", co-supervised with Prof. Lucile Sassatelli."
+        - Franz Franco Gallo, Université Côte d'Azur, 2022. "Deep learning for multiple prediction of head motion", co-supervised with Prof. Lucile Sassatelli.
+        - Hugo Bell, University of Edinburgh, 2021. "Deep learning for human head motion prediction with confidence", co-supervised with Prof. Lucile Sassatelli.

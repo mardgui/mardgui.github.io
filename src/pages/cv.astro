@@ -1,0 +1,161 @@
+---
+// src/pages/cv.astro
+
+import '../styles/global.css';
+
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en" class="antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Curriculum Vitae - Quentin Guimard</title>
+	  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <style is:global>
+      /* Inter Variable Font (Weights 100-900 in one file) */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-display: optional;
+        font-weight: 100 900;
+        src: url(@fontsource-variable/inter/files/inter-latin-wght-normal.woff2) format('woff2-variations');
+      }
+
+      /* JetBrains Mono Variable Font (Weights 100-800 in one file) */
+      @font-face {
+        font-family: 'JetBrains Mono';
+        font-style: normal;
+        font-display: optional;
+        font-weight: 100 800;
+        src: url(@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2) format('woff2-variations');
+      }
+
+      body { font-family: 'Inter', sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+
+    <meta name="description" content="Curriculum Vitae and career timeline of Quentin Guimard. Download the full CV in English or French." />
+    <meta property="og:title" content="Curriculum Vitae | Quentin Guimard" />
+    <meta property="og:description" content="Career timeline, education, and professional experience in Trustworthy AI and Computer Vision." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://mardgui.github.io/og-image.jpg" />
+    <meta property="twitter:image" content="https://mardgui.github.io/og-image.jpg" />
+  </head>
+  
+  <body class="bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 transition-colors duration-300">
+    <!-- Grid Background -->
+    <div class="absolute inset-0 -z-10 h-full w-full bg-zinc-50 dark:bg-zinc-950 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+    
+    <Header />
+
+    <main class="max-w-3xl mx-auto px-6 py-10">
+
+      <!-- Navigation Back to Home -->
+      <a href="/" class="inline-flex items-center gap-2 font-mono text-sm font-medium text-zinc-600 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors mb-8">
+        <span>&larr;</span> Back to Home
+      </a>
+      
+      <div class="flex items-center gap-4 mb-10">
+        <h1 class="text-3xl font-bold tracking-tight">Curriculum Vitae</h1>
+        <div class="h-px flex-1 bg-zinc-200 dark:bg-zinc-800"></div>
+      </div>
+
+      <!-- Prominent Download Buttons -->
+      <div class="grid sm:grid-cols-2 gap-4 mb-16">
+        <a href="/assets/Quentin_Guimard_CV_EN.pdf" target="_blank" class="flex items-center justify-center gap-3 p-4 rounded-xl bg-zinc-900 dark:bg-zinc-100 text-white dark:text-zinc-900 font-semibold hover:bg-indigo-600 dark:hover:bg-indigo-500 transition-colors shadow-sm group">
+          <svg class="w-5 h-5 group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+          Download PDF (English)
+        </a>
+        <a href="/assets/Quentin_Guimard_CV_FR.pdf" target="_blank" class="flex items-center justify-center gap-3 p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 backdrop-blur-sm text-zinc-900 dark:text-zinc-100 font-semibold hover:border-indigo-500/50 dark:hover:border-indigo-500/50 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors shadow-sm group">
+          <svg class="w-5 h-5 group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+          Télécharger PDF (Français)
+        </a>
+      </div>
+
+      <!-- High-Level Career Timeline -->
+      <div class="space-y-8">
+        <h2 class="text-xl font-semibold tracking-tight mb-6">Career Timeline</h2>
+        
+        <!-- Timeline Container -->
+        <div class="border-l border-zinc-200 dark:border-zinc-800 ml-3 space-y-10 py-2">
+          
+          <!-- Current Postdoc -->
+          <div class="relative pl-8">
+            <span class="absolute -left-[6px] top-1.5 h-3 w-3 rounded-full bg-indigo-500 ring-4 ring-zinc-50 dark:ring-zinc-950"></span>
+            <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
+              <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Postdoctoral Researcher</h3>
+              <time class="font-mono text-sm text-indigo-600 dark:text-indigo-400 font-medium">Mar 2024 &ndash; Present</time>
+            </div>
+            <p class="text-zinc-600 dark:text-zinc-400">University of Trento &middot; Trento, Italy</p>
+          </div>
+
+          <!-- CWI Visiting -->
+          <div class="relative pl-8">
+            <span class="absolute -left-[6px] top-1.5 h-3 w-3 rounded-full bg-zinc-300 dark:bg-zinc-700 ring-4 ring-zinc-50 dark:ring-zinc-950"></span>
+            <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
+              <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Visiting Researcher</h3>
+              <time class="font-mono text-sm text-zinc-600 dark:text-zinc-400">Apr 2023 &ndash; Jun 2023</time>
+            </div>
+            <p class="text-zinc-600 dark:text-zinc-400">Centrum Wiskunde & Informatica (CWI) &middot; Amsterdam, Netherlands</p>
+          </div>
+
+          <!-- Florence Visiting -->
+          <div class="relative pl-8">
+            <span class="absolute -left-[6px] top-1.5 h-3 w-3 rounded-full bg-zinc-300 dark:bg-zinc-700 ring-4 ring-zinc-50 dark:ring-zinc-950"></span>
+            <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
+              <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Visiting Researcher</h3>
+              <time class="font-mono text-sm text-zinc-600 dark:text-zinc-400">Jul 2021</time>
+            </div>
+            <p class="text-zinc-600 dark:text-zinc-400">University of Florence &middot; Florence, Italy</p>
+          </div>
+
+          <!-- Ph.D. -->
+          <div class="relative pl-8">
+            <span class="absolute -left-[6px] top-1.5 h-3 w-3 rounded-full bg-zinc-300 dark:bg-zinc-700 ring-4 ring-zinc-50 dark:ring-zinc-950"></span>
+            <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
+              <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Ph.D. in Computer Science</h3>
+              <time class="font-mono text-sm text-zinc-600 dark:text-zinc-400">Oct 2020 &ndash; Dec 2023</time>
+            </div>
+            <p class="text-zinc-600 dark:text-zinc-400">Université Côte d'Azur &middot; Sophia Antipolis, France</p>
+          </div>
+
+          <!-- Thales -->
+          <div class="relative pl-8">
+            <span class="absolute -left-[6px] top-1.5 h-3 w-3 rounded-full bg-zinc-300 dark:bg-zinc-700 ring-4 ring-zinc-50 dark:ring-zinc-950"></span>
+            <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
+              <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Junior Data Scientist</h3>
+              <time class="font-mono text-sm text-zinc-600 dark:text-zinc-400">Sep 2019 &ndash; Sep 2020</time>
+            </div>
+            <p class="text-zinc-600 dark:text-zinc-400">Thales Services &middot; Sophia Antipolis, France</p>
+          </div>
+
+          <!-- UQAM -->
+          <div class="relative pl-8">
+            <span class="absolute -left-[6px] top-1.5 h-3 w-3 rounded-full bg-zinc-300 dark:bg-zinc-700 ring-4 ring-zinc-50 dark:ring-zinc-950"></span>
+            <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
+              <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Research Assistant</h3>
+              <time class="font-mono text-sm text-zinc-600 dark:text-zinc-400">Jul 2019 &ndash; Aug 2019</time>
+            </div>
+            <p class="text-zinc-600 dark:text-zinc-400">Université du Québec à Montréal (UQAM) &middot; Montreal, Canada</p>
+          </div>
+
+          <!-- Polytech -->
+          <div class="relative pl-8">
+            <span class="absolute -left-[6px] top-1.5 h-3 w-3 rounded-full bg-zinc-300 dark:bg-zinc-700 ring-4 ring-zinc-50 dark:ring-zinc-950"></span>
+            <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-1">
+              <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Diplôme d'Ingénieur & M.Sc. in Computer Science</h3>
+              <time class="font-mono text-sm text-zinc-600 dark:text-zinc-400">2017 &ndash; 2020</time>
+            </div>
+            <p class="text-zinc-600 dark:text-zinc-400">Polytech Nice Sophia &middot; Sophia Antipolis, France</p>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,60 @@
+---
+import projects from '../data/projects.json';
+
+const { filterSelected } = Astro.props;
+
+const displayProjects = filterSelected 
+  ? projects.filter((proj) => proj.selected) 
+  : projects;
+
+const HeadingTag = filterSelected ? "h3" : "h2";
+---
+
+<div class="grid gap-4 sm:grid-cols-2">
+  {displayProjects.map((project) => (
+    <div class="flex flex-col justify-between p-5 border border-zinc-200 dark:border-zinc-800 rounded-xl bg-white/50 dark:bg-zinc-900/50 backdrop-blur-sm hover:border-indigo-500/50 dark:hover:border-indigo-500/50 transition-colors shadow-sm group">
+      
+      <div>
+        <div class="flex items-center justify-between mb-3">
+          <HeadingTag class="text-lg font-bold text-zinc-900 dark:text-zinc-100 tracking-tight group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+            {project.name}
+          </HeadingTag>
+          <svg class="w-5 h-5 text-zinc-400 dark:text-zinc-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+        </div>
+        
+        <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+          {project.description}
+        </p>
+      </div>
+
+      <div>
+        {project.tags && (
+          <div class="flex flex-wrap gap-2 mb-4">
+            {project.tags.map((tag) => (
+              <span class="px-2 py-1 text-[10px] font-mono uppercase tracking-wider rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700">
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
+
+        {project.links && (
+          <div class="flex flex-wrap gap-3 pt-4 border-t border-zinc-100 dark:border-zinc-800/50">
+            {Object.entries(project.links).map(([label, url]) => (
+              <a 
+                href={url as string} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label={`${label} for ${project.name}`}
+                class="font-mono text-xs font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 hover:underline underline-offset-4 transition-colors flex items-center gap-1"
+              >
+                [{label}]
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+      
+    </div>
+  ))}
+</div>

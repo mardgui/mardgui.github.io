@@ -1,0 +1,35 @@
+---
+// src/components/Header.astro
+const currentPath = Astro.url.pathname;
+
+const navLinks = [
+  { name: 'Home', url: '/' },
+  { name: 'Publications', url: '/publications' },
+  { name: 'Open Source', url: '/projects' },
+  { name: 'CV', url: '/cv' }
+];
+---
+
+<header class="sticky top-0 z-50 w-full backdrop-blur border-b border-zinc-200 dark:border-zinc-800 bg-white/75 dark:bg-zinc-950/75">
+  <div class="max-w-4xl mx-auto px-6 py-4 sm:py-0 sm:h-16 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-0">
+    <a href="/" class="font-bold text-zinc-900 dark:text-zinc-50 tracking-tight hover:text-indigo-600 transition-colors shrink-0">
+      Q. Guimard
+    </a>
+    
+    <nav class="flex gap-4 sm:gap-6 font-mono text-sm overflow-x-auto w-full sm:w-auto sm:justify-end no-scrollbar pb-1 sm:pb-0">
+      {navLinks.map((link) => (
+        <a 
+          href={link.url} 
+          class={`whitespace-nowrap transition-colors ${currentPath === link.url || (link.url !== '/' && currentPath.startsWith(link.url)) ? 'text-indigo-600 dark:text-indigo-400 font-semibold' : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'}`}
+        >
+          {link.name}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>
+
+<style>
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>

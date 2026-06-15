@@ -1,0 +1,60 @@
+[
+  {
+    "id": "sem",
+    "selected": true,
+    "name": "SEM",
+    "description": "A post-hoc, zero-shot debiasing framework that operates in a Sparse Autoencoder (SAE) latent space to pinpoint and modulate bias-relevant neurons in Vision-Language Models.",
+    "tags": ["PyTorch", "Mechanistic Interpretability", "VLMs", "Debiasing"],
+    "links": {
+      "GitHub": "https://github.com/mardgui/SEM",
+      "Project Page": "https://sparse-embedding-modulation.github.io",
+      "arXiv": "https://arxiv.org/abs/2603.19028"
+    }
+  },
+  {
+    "id": "c2b",
+    "selected": true,
+    "name": "C2B",
+    "description": "An unsupervised, task-agnostic framework for discovering biases in pretrained visual classifiers using LLM-generated bias proposals and text-to-image retrieval.",
+    "tags": ["Bias Discovery", "LLMs", "VQA", "Computer Vision"],
+    "links": {
+      "GitHub": "https://github.com/mardgui/C2B",
+      "Video": "https://www.youtube.com/watch?v=h04LDv8Dwo4",
+      "arXiv": "https://arxiv.org/abs/2504.20902"
+    }
+  },
+  {
+    "id": "dvms",
+    "selected": false,
+    "name": "DVMS",
+    "description": "A PyTorch-based Deep Variational Learning framework for multiple trajectory prediction of 360° head movements.",
+    "tags": ["PyTorch", "Trajectory Prediction", "VR/360°", "Deep Learning"],
+    "links": {
+      "GitLab": "https://gitlab.com/DVMS_/DVMS",
+      "Paper": "https://dl.acm.org/doi/abs/10.1145/3524273.3528176"
+    }
+  },
+  {
+    "id": "smart360",
+    "selected": false,
+    "name": "SMART360",
+    "description": "A 360° streaming simulation environment and preprocessing pipeline to compare motion prediction and adaptive bitrate (ABR) strategies in virtual reality.",
+    "tags": ["Simulation", "Adaptive Streaming", "VR/360°", "Docker"],
+    "links": {
+      "Simulator": "https://gitlab.com/SMART360/SMART360-simulator",
+      "Preprocessing": "https://gitlab.com/SMART360/SMART360-preprocessing",
+      "Paper": "https://dl.acm.org/doi/abs/10.1145/3587819.3592547"
+    }
+  },
+  {
+    "id": "pem360",
+    "selected": false,
+    "name": "PEM360",
+    "description": "A processing suite and dataset of 360° videos with continuous physiological measurements, subjective emotional ratings, and motion traces. Includes tools for computing saliency and emotional maps.",
+    "tags": ["Dataset", "Physiological Data", "Saliency Maps", "Python"],
+    "links": {
+      "GitLab": "https://gitlab.com/PEM360/PEM360",
+      "Paper": "https://dl.acm.org/doi/abs/10.1145/3524273.3532895"
+    }
+  }
+]

@@ -1,0 +1,107 @@
+---
+import { Image } from "astro:assets";
+import profile from "/public/assets/profile.jpg";
+---
+
+<section class="relative flex flex-col gap-8">
+  <div class="absolute top-0 right-0 -mr-4 -mt-4 w-32 h-32 bg-indigo-500/20 rounded-full blur-3xl -z-10"></div>
+
+  <div class="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-8">
+    <div class="space-y-4">
+      <div class="inline-flex items-center gap-2 rounded-full border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 px-3 py-1 shadow-sm">
+        <span class="flex h-2 w-2 rounded-full bg-indigo-500 animate-pulse shrink-0"></span>
+        <span class="font-mono text-xs font-medium text-zinc-600 dark:text-zinc-300">
+          Postdoc @ UniTrento
+        </span>
+      </div>
+      
+      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight bg-gradient-to-r from-zinc-900 to-zinc-500 dark:from-zinc-100 dark:to-zinc-500 bg-clip-text text-transparent">
+        Quentin Guimard
+      </h1>
+    </div>
+    
+    <div class="relative group w-28 h-28 shrink-0">
+      <div class="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full opacity-30 group-hover:opacity-100 transition duration-500 blur"></div>
+        <Image
+        src={profile}
+        alt="Quentin Guimard"
+        width={224}
+        height={224}
+        loading="eager"
+        class="relative w-28 h-28 rounded-full border-2 border-white dark:border-zinc-900 object-cover shadow-xl"
+        />
+    </div>
+  </div>
+
+  <div class="space-y-6 text-zinc-700 dark:text-zinc-300 leading-relaxed text-base">
+  
+    <div class="flex items-start sm:items-center gap-3 p-3 rounded-lg border border-indigo-200 dark:border-indigo-500/30 bg-indigo-50/50 dark:bg-indigo-500/10 text-sm">
+      <span class="flex h-2 w-2 rounded-full bg-indigo-500 animate-pulse mt-1.5 sm:mt-0 shrink-0"></span>
+      <p class="text-zinc-800 dark:text-zinc-200">
+        <strong>Latest Highlight (CVPR Findings 2026):</strong> Check out <a href="https://sparse-embedding-modulation.github.io" class="font-medium text-indigo-600 dark:text-indigo-400 hover:underline" target="_blank" rel="noopener noreferrer">our latest work</a> on post-hoc debiasing of Vision&#8209;Language&nbsp;Models (VLMs) using sparse autoencoders!
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      <p>
+        I am a postdoctoral research fellow at the University of Trento (DISI), where my research focuses on <strong>Trustworthy&nbsp;AI</strong>. I work within the <a href="https://mhug.disi.unitn.it/" target="_blank" rel="noopener noreferrer" class="font-medium text-indigo-600 dark:text-indigo-400 hover:underline underline-offset-4 transition-colors">Multimedia and Human Understanding Group (MHUG)</a> in collaboration with <a href="https://eliricci.eu/" target="_blank" rel="noopener noreferrer" class="font-medium text-zinc-900 dark:text-zinc-100 underline decoration-zinc-300 dark:decoration-zinc-700 hover:decoration-indigo-500 transition-colors">Prof. Elisa Ricci</a>.
+      </p>
+      
+      <p>
+        During my PhD, supervised by <a href="https://webusers.i3s.unice.fr/~sassatelli/" target="_blank" rel="noopener noreferrer" class="font-medium text-zinc-900 dark:text-zinc-100 underline decoration-zinc-300 dark:decoration-zinc-700 hover:decoration-indigo-500 transition-colors">Prof. Lucile Sassatelli</a>, I explored the links between visual content, human attention, and emotions in immersive 360° environments, designing adaptive systems (such as <a href="https://dl.acm.org/doi/abs/10.1145/3524273.3528176" target="_blank" rel="noopener noreferrer" class="font-medium text-indigo-600 dark:text-indigo-400 hover:underline underline-offset-4 transition-colors">DVMS</a>) to ensure equitable streaming quality across diverse users.
+      </p>
+
+      <p>
+        This focus on fairness and reliability led to my current work on the robustness and capabilities of multi-modal foundation models. For example, my ongoing projects involve building frameworks to track and semantically map complex physical object transformations in video, and developing benchmarks to audit the perceptual and reasoning limits of video LLMs in safety-critical scenarios.
+      </p>
+    </div>
+
+    <div class="pt-2">
+      <h2 class="text-zinc-900 dark:text-zinc-100 font-semibold mb-3">
+        I am driven by a fundamental desire to understand exactly how AI models work under the hood. My current research interests span three axes:
+      </h2>
+      <ul class="space-y-3">
+        <li class="flex items-start">
+          <span class="text-indigo-600 dark:text-indigo-400 mr-3 mt-1 font-mono text-xs shrink-0">01</span>
+          <span><strong>Model Auditing (Black-Box):</strong> Developing automated benchmarks, bias detection frameworks, and red-teaming approaches to expose vulnerabilities and failure cases in multi-modal systems.</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-indigo-600 dark:text-indigo-400 mr-3 mt-1 font-mono text-xs shrink-0">02</span>
+          <span><strong>Mechanistic Interpretability & Interpretability-by-Design (White-Box):</strong> Exploring internal representations using linear probing and Sparse Autoencoders (SAEs), and investigating inherently interpretable architectures like Concept Bottleneck Models (CBMs) to map latent spaces to human-understandable features.</span>
+        </li>
+        <li class="flex items-start">
+          <span class="text-indigo-600 dark:text-indigo-400 mr-3 mt-1 font-mono text-xs shrink-0">03</span>
+          <span><strong>Bias & Fairness:</strong> Leveraging this understanding of models to characterize their biases and build fairer, more transparent systems.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bg-indigo-50/50 dark:bg-indigo-500/10 border border-indigo-100 dark:border-indigo-500/20 rounded-xl p-4">
+      <p class="text-indigo-900 dark:text-indigo-200 text-sm">
+        <strong class="font-semibold flex items-center gap-2 mb-1">
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+          Open Science & Reproducibility
+        </strong>
+        I strongly believe that trustworthy AI requires transparent science. I prioritize reproducibility and open-source engineering, an ethos reflected in the public release of frameworks like <a href="https://github.com/mardgui/C2B" target="_blank" rel="noopener noreferrer" class="font-medium text-indigo-600 dark:text-indigo-400 hover:underline underline-offset-4 transition-colors">C2B</a> and <a href="https://github.com/mardgui/SEM" target="_blank" rel="noopener noreferrer" class="font-medium text-indigo-600 dark:text-indigo-400 hover:underline underline-offset-4 transition-colors">SEM</a>, as well as the <a href="https://www.acm.org/publications/policies/artifact-review-and-badging-current" target="_blank" rel="noopener noreferrer" class="font-medium text-indigo-600 dark:text-indigo-400 hover:underline underline-offset-4 transition-colors">ACM reproducibility badges</a> awarded to my doctoral research.
+      </p>
+    </div>
+  </div>
+
+  <div class="flex flex-wrap gap-4 font-mono text-sm pt-2">
+    <a href="mailto:quentin.guimard@unitn.it" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 hover:bg-zinc-800 dark:hover:bg-zinc-100 transition-colors shadow-sm">
+      Email
+    </a>
+    <a href="https://github.com/mardgui" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-indigo-500 dark:hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors bg-white dark:bg-zinc-950 shadow-sm">
+      GitHub
+    </a>
+    <a href="https://scholar.google.com/citations?user=nxGwojoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-indigo-500 dark:hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors bg-white dark:bg-zinc-950 shadow-sm">
+      Google Scholar
+    </a>
+    <a href="https://linkedin.com/in/quentinguimard" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-indigo-500 dark:hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors bg-white dark:bg-zinc-950 shadow-sm">
+      LinkedIn
+    </a>
+    <a href="/cv" class="flex items-center gap-2 px-4 py-2 rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-indigo-500 dark:hover:border-indigo-500 text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 transition-colors bg-white dark:bg-zinc-950 shadow-sm font-semibold">
+        View CV <span>&rarr;</span>
+    </a>
+  </div>
+</section>

@@ -1,0 +1,78 @@
+---
+// src/pages/404.astro
+
+import '../styles/global.css';
+---
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>404 - Quentin Guimard</title>
+	  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <style is:global>
+      /* Inter Variable Font (Weights 100-900 in one file) */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-display: optional;
+        font-weight: 100 900;
+        src: url(@fontsource-variable/inter/files/inter-latin-wght-normal.woff2) format('woff2-variations');
+      }
+
+      /* JetBrains Mono Variable Font (Weights 100-800 in one file) */
+      @font-face {
+        font-family: 'JetBrains Mono';
+        font-style: normal;
+        font-display: optional;
+        font-weight: 100 800;
+        src: url(@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2) format('woff2-variations');
+      }
+
+      body { font-family: 'Inter', sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+
+    <meta name="description" content="404 Not Found." />
+    <meta property="og:title" content="404 Not Found | Quentin Guimard" />
+    <meta property="og:description" content="The page you are looking for does not exist, may have been moved, or the URL is incorrect." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://mardgui.github.io/og-image.jpg" />
+    <meta property="twitter:image" content="https://mardgui.github.io/og-image.jpg" />
+  </head>
+
+<body class="bg-zinc-50 text-zinc-900">
+
+<div class="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+
+<main class="max-w-2xl mx-auto min-h-screen flex items-center px-6">
+
+  <div>
+
+    <p class="font-mono text-sm text-indigo-600 mb-3">
+      ERROR 404
+    </p>
+
+    <h1 class="text-5xl font-bold tracking-tight mb-4">
+      Page not found
+    </h1>
+
+    <p class="text-zinc-600 leading-relaxed max-w-lg mb-8">
+      The page you are looking for does not exist, may have been moved,
+      or the URL is incorrect.
+    </p>
+
+    <a
+      href="/"
+      class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-zinc-900 text-white hover:bg-zinc-800 transition-colors"
+    >
+      Return Home →
+    </a>
+
+  </div>
+
+</main>
+
+</body>
+</html>

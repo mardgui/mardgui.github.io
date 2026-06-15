@@ -1,0 +1,72 @@
+---
+// src/pages/publications.astro
+
+import '../styles/global.css';
+
+import Header from '../components/Header.astro';
+import Publications from '../components/Publications.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en" class="antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>All Publications - Quentin Guimard</title>
+	  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <style is:global>
+      /* Inter Variable Font (Weights 100-900 in one file) */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-display: optional;
+        font-weight: 100 900;
+        src: url(@fontsource-variable/inter/files/inter-latin-wght-normal.woff2) format('woff2-variations');
+      }
+
+      /* JetBrains Mono Variable Font (Weights 100-800 in one file) */
+      @font-face {
+        font-family: 'JetBrains Mono';
+        font-style: normal;
+        font-display: optional;
+        font-weight: 100 800;
+        src: url(@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2) format('woff2-variations');
+      }
+
+      body { font-family: 'Inter', sans-serif; }
+      .font-mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+
+    <meta name="description" content="Complete list of academic publications by Quentin Guimard, including papers on Vision-Language Models, bias detection, and VR streaming." />
+    <meta property="og:title" content="Publications | Quentin Guimard" />
+    <meta property="og:description" content="Read the latest research papers and conference publications from Quentin Guimard." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://mardgui.github.io/og-image.jpg" />
+    <meta property="twitter:image" content="https://mardgui.github.io/og-image.jpg" />
+  </head>
+  
+  <body class="bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 transition-colors duration-300">
+    <div class="absolute inset-0 -z-10 h-full w-full bg-zinc-50 dark:bg-zinc-950 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+    
+    <Header />
+
+    <main class="max-w-3xl mx-auto px-6 py-10">
+      
+      <!-- Navigation Back to Home -->
+      <a href="/" class="inline-flex items-center gap-2 font-mono text-sm font-medium text-zinc-600 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors mb-8">
+        <span>&larr;</span> Back to Home
+      </a>
+
+      <div class="flex items-center gap-4 mb-8">
+        <h1 class="text-3xl font-bold tracking-tight">All Publications</h1>
+        <div class="h-px flex-1 bg-zinc-200 dark:bg-zinc-800"></div>
+      </div>
+      
+      <!-- Render the full list by not passing a 'max' prop -->
+      <Publications />
+      
+    </main>
+    <Footer />
+  </body>
+</html>
